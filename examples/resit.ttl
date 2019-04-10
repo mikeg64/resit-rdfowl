@@ -1,110 +1,83 @@
-@prefix rit: <http://rcg.group.shef.ac.uk/resitowl/resit/> .
+@prefix : <http://rcg.group.shef.ac.uk/resitowl/resit#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@base <http://rcg.group.shef.ac.uk/resitowl/resit/> .
 
-
-
-@base <http://rcg.group.shef.ac.uk/resitowl/> .
-
-
-
-<http://rcg.group.shef.ac.uk/resitowl/resit> rdf:type owl:Ontology .
-
-
-
+<http://rcg.group.shef.ac.uk/resitowl/resit#> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  http://rcg.group.shef.ac.uk/resitowl/resit#isa
-							:isa rdf:type owl:ObjectProperty ;
-                                                         rdfs:subPropertyOf owl:topObjectProperty ;
-                                                         rdfs:label "isa" .
-
-
-
-
-
-
+:isa rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf owl:topObjectProperty ;
+     rdfs:label "isa" .
 
 
 #################################################################
 #    Classes
 #################################################################
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#resit
-							:resit  rdf:type owl:Class .
- 
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit
+<http://rcg.group.shef.ac.uk/resitowl/resit> rdf:type owl:Class .
 
 
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#service
-							:service  rdf:type owl:Class ;
-                                                        rdfs:subClassOf :resit ;
-                                                        rdfs:label "service" . 
-
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#system
-							:system  rdf:type owl:Class ;
-                                                        rdfs:subClassOf :resit ;
-                                                        rdfs:label "system" .                                                        
-                                                        
-
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#researchsoftware
-							:researchsoftware rdf:type owl:Class ;
-                                                        rdfs:subClassOf :resit ;
-                                                        rdfs:label "researchsoftware" ;
-                                                        rdfs:subClassOf :service .
-                                                        
- 
-                                                        
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#hpc
-							:hpc rdf:type owl:Class ;
-                                                        rdfs:subClassOf :resit ;
-                                                        rdfs:label "hpc" ;
-                                                        rdfs:subClassOf :system .                                                                                                                
-                                                        
-                                                       
-
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#hpcs
-							:hpcs rdf:type owl:Class ;
-                                                        rdfs:subClassOf :resit ;
-                                                        rdfs:label "hpcs" ;
-                                                        rdfs:subClassOf :service .                                                        
+###  http://rcg.group.shef.ac.uk/resitowl/resit#hpc
+:hpc rdf:type owl:Class ;
+     rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ,
+                     :system ;
+     rdfs:label "hpc" .
 
 
+###  http://rcg.group.shef.ac.uk/resitowl/resit#hpcs
+:hpcs rdf:type owl:Class ;
+      rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ,
+                      :service .
+
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#researchsoftware
+:researchsoftware rdf:type owl:Class ;
+                  rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ,
+                                  :service ;
+                  rdfs:label "researchsoftware" .
+
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#service
+:service rdf:type owl:Class ;
+         rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ;
+         rdfs:label "service" .
+
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#system
+:system rdf:type owl:Class ;
+        rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ;
+        rdfs:label "system" .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
+###  http://rcg.group.shef.ac.uk/resitowl/resit#hpcs
+:hpcs rdf:type owl:NamedIndividual ,
+               <http://rcg.group.shef.ac.uk/resitowl/resit> .
 
 
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#hpcs
-							:hpcs rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "hpcs" .
+###  http://rcg.group.shef.ac.uk/resitowl/resit#iceberg
+:iceberg rdf:type owl:NamedIndividual ,
+                  <http://rcg.group.shef.ac.uk/resitowl/resit> ;
+         rdfs:label "iceberg" .
 
 
+#################################################################
+#    Annotations
+#################################################################
 
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#iceberg
-				                        :iceberg rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "iceberg" ;
-	                                                : hpc;
-	                                                :isa :hpcs .
-
-
-                                                         
-###  <http://rcg.group.shef.ac.uk/resitowl/resit#sharc
-							 :sharc rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "sharc" ;
-                                                         : hpc;
-	                                                 :isa :hpcs .
-
-
+:hpcs rdfs:label "hpcs" .
 
 
 ###  Generated by the OWL API (version 4.5.10) https://github.com/owlcs/owlapi

@@ -3,48 +3,50 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#system">
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hpc">
+    <rdfs:label>hpc</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#system"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>system</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#resit"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hpcs">
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
+    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>hpcs</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#service">
-    <rdfs:subClassOf rdf:resource="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#resit"/>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#iceberg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdfs:label>iceberg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#isa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:label>isa</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#service">
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label>service</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#isa">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label>isa</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#system">
+    <rdfs:label>system</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#researchsoftware">
-    <rdfs:subClassOf rdf:resource="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#resit"/>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#researchsoftware">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
     <rdfs:label>researchsoftware</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#service"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#hpcs">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>hpcs</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#resit"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:subClassOf rdf:resource="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#service"/>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#hpc">
-    <rdfs:subClassOf rdf:resource="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#resit"/>
-    <rdfs:label>hpc</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#system"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#iceberg">
-    <rdfs:label>iceberg</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://github.com/mikeg64/resit-rdfowl/blob/master/resit#resit">
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>
