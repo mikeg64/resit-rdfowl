@@ -1,4 +1,4 @@
-@prefix : <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#> .
+@prefix rit: <http://rcg.group.shef.ac.uk/resitowl/resit/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -9,11 +9,11 @@
 
 
 
-@base <https://github.com/mikeg64/resit-rdfowl/blob/master/resit> .
+@base <http://rcg.group.shef.ac.uk/resitowl/> .
 
 
 
-<https://github.com/mikeg64/resit-rdfowl/blob/master/resit> rdf:type owl:Ontology .
+<http://rcg.group.shef.ac.uk/resitowl/resit> rdf:type owl:Ontology .
 
 
 
@@ -22,8 +22,8 @@
 #    Object Properties
 #################################################################
 
-###  https://github.com/mikeg64/resit-rdfowl/blob/master/resit#isa
-														:isa rdf:type owl:ObjectProperty ;
+###  http://rcg.group.shef.ac.uk/resitowl/resit#isa
+							:isa rdf:type owl:ObjectProperty ;
                                                          rdfs:subPropertyOf owl:topObjectProperty ;
                                                          rdfs:label "isa" .
 
@@ -37,40 +37,40 @@
 #################################################################
 #    Classes
 #################################################################
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#resit
-														:resit  rdf:type owl:Class .
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#resit
+							:resit  rdf:type owl:Class .
  
 
 
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#service
-														:service  rdf:type owl:Class ;
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#service
+							:service  rdf:type owl:Class ;
                                                         rdfs:subClassOf :resit ;
                                                         rdfs:label "service" . 
 
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#system
-														:system  rdf:type owl:Class ;
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#system
+							:system  rdf:type owl:Class ;
                                                         rdfs:subClassOf :resit ;
                                                         rdfs:label "system" .                                                        
                                                         
 
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#researchsoftware
-														:researchsoftware rdf:type owl:Class ;
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#researchsoftware
+							:researchsoftware rdf:type owl:Class ;
                                                         rdfs:subClassOf :resit ;
                                                         rdfs:label "researchsoftware" ;
                                                         rdfs:subClassOf :service .
                                                         
  
                                                         
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#hpc
-														:hpc rdf:type owl:Class ;
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#hpc
+							:hpc rdf:type owl:Class ;
                                                         rdfs:subClassOf :resit ;
                                                         rdfs:label "hpc" ;
                                                         rdfs:subClassOf :system .                                                                                                                
                                                         
                                                        
 
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#hpcs
-														:hpcs rdf:type owl:Class ;
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#hpcs
+							:hpcs rdf:type owl:Class ;
                                                         rdfs:subClassOf :resit ;
                                                         rdfs:label "hpcs" ;
                                                         rdfs:subClassOf :service .                                                        
@@ -84,25 +84,25 @@
 
 
 
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#hpcs
-														:hpcs rdf:type owl:NamedIndividual ;
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#hpcs
+							:hpcs rdf:type owl:NamedIndividual ;
                                                          rdfs:label "hpcs" .
 
 
 
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#iceberg
-				:iceberg rdf:type owl:NamedIndividual ;
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#iceberg
+				                        :iceberg rdf:type owl:NamedIndividual ;
                                                          rdfs:label "iceberg" ;
-	: hpc;
-	:isa :hpcs .
+	                                                : hpc;
+	                                                :isa :hpcs .
 
 
                                                          
-###  <https://github.com/mikeg64/resit-rdfowl/blob/master/resit#sharc
-														:sharc rdf:type owl:NamedIndividual ;
+###  <http://rcg.group.shef.ac.uk/resitowl/resit#sharc
+							 :sharc rdf:type owl:NamedIndividual ;
                                                          rdfs:label "sharc" ;
-                                                         	: hpc;
-	                                                   :isa :hpcs .
+                                                         : hpc;
+	                                                 :isa :hpcs .
 
 
 
