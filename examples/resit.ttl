@@ -17,6 +17,11 @@
      rdfs:subPropertyOf owl:topObjectProperty ;
      rdfs:label "isa" .
 
+###  http://rcg.group.shef.ac.uk/resitowl/resit#ismemberof
+:ismemberof rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf owl:topObjectProperty ;
+     rdfs:label "ismemberof" .
+
 
 #################################################################
 #    Classes
@@ -50,6 +55,34 @@
 :service rdf:type owl:Class ;
          rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ;
          rdfs:label "service" .
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#feature
+:feature rdf:type owl:Class ;
+         rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ;
+         rdfs:label "feature" .
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#project
+:project rdf:type owl:Class ;
+                  rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ,
+                                  :feature ;
+                  rdfs:label "project" .
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#group
+:group rdf:type owl:Class ;
+                  rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ,
+                                  :feature ;
+                  rdfs:label "group" .
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#schedgroup
+:schedgroup rdf:type owl:Class ;
+                  rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ,
+                                  :feature ;
+                  rdfs:label "schedgroup" .
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#personnel
+:personnel rdf:type owl:Class ;
+         rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ;
+         rdfs:label "personnel" .
 
 
 ###  http://rcg.group.shef.ac.uk/resitowl/resit#system
