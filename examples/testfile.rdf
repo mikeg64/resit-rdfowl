@@ -1,117 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns="http://example.org/relatives#"
-   xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:rel="http://example.org/relatives#"
 >
-  <rdf:Description rdf:about="http://example.org/relatives#John">
-    <hasChild rdf:resource="http://example.org/relatives#Mary"/>
-    <hasChild rdf:resource="http://example.org/relatives#Michael"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-    <hasParent rdf:resource="http://example.org/relatives#James2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Bob">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-    <hasParent rdf:resource="http://example.org/relatives#Bill"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Cathy">
-    <hasParent rdf:resource="http://example.org/relatives#Bill"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/relatives#Simon">
-    <hasParent rdf:resource="http://example.org/relatives#Michael"/>
-    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Tim">
+    <rel:hasParent rdf:resource="http://example.org/relatives#Michael"/>
     <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-    <hasParent rdf:resource="http://example.org/relatives#Simon"/>
-    <hasParent rdf:resource="http://example.org/relatives#Valerie"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#hasParent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Parent">
-    <rdfs:subClassOf rdf:resource="http://example.org/relatives#Person"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/relatives#James2">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <hasChild rdf:resource="http://example.org/relatives#John"/>
     <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Victor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Fred">
-    <hasChild rdf:resource="http://example.org/relatives#James"/>
-    <hasParent rdf:resource="http://example.org/relatives#Cathy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Mary">
-    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="fb55de996ea394abeb7dd475a38228d0bb2">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://example.org/relatives#hasParent"/>
+    <rel:hasChild rdf:resource="http://example.org/relatives#John"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/relatives#Ann">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Jacob">
-    <hasParent rdf:resource="http://example.org/relatives#Fred"/>
     <rdf:type rdf:resource="http://example.org/relatives#Person"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#hasGrandparent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:propertyChainAxiom rdf:nodeID="fb55de996ea394abeb7dd475a38228d0bb1"/>
+  <rdf:Description rdf:about="http://example.org/relatives#John">
+    <rel:hasChild rdf:resource="http://example.org/relatives#Michael"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rel:hasChild rdf:resource="http://example.org/relatives#Mary"/>
+    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
+    <rel:hasParent rdf:resource="http://example.org/relatives#James2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/relatives#Tim">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rel:hasParent rdf:resource="http://example.org/relatives#Valerie"/>
+    <rel:hasParent rdf:resource="http://example.org/relatives#Simon"/>
+    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/relatives#James">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://example.org/relatives#Person"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Michael">
-    <hasParent rdf:resource="http://example.org/relatives#John"/>
+  <rdf:Description rdf:about="http://example.org/relatives#Fred">
+    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
+    <rel:hasParent rdf:resource="http://example.org/relatives#Cathy"/>
+    <rel:hasChild rdf:resource="http://example.org/relatives#James"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/relatives#Victor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/relatives#Jacob">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rel:hasParent rdf:resource="http://example.org/relatives#Fred"/>
     <rdf:type rdf:resource="http://example.org/relatives#Person"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/relatives#Valerie">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://example.org/relatives#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#hasChild">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf rdf:resource="http://example.org/relatives#hasParent"/>
+  <rdf:Description rdf:about="http://example.org/relatives#Mary">
+    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/relatives#Cathy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rel:hasParent rdf:resource="http://example.org/relatives#Bill"/>
+    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/relatives#Aaron">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Person">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="fb55de996ea394abeb7dd475a38228d0bb1">
-    <rdf:first rdf:resource="http://example.org/relatives#hasParent"/>
-    <rdf:rest rdf:nodeID="fb55de996ea394abeb7dd475a38228d0bb2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/relatives#Child">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://example.org/relatives#Person"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/relatives#Bill">
     <rdf:type rdf:resource="http://example.org/relatives#Person"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/relatives#Bob">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rel:hasParent rdf:resource="http://example.org/relatives#Bill"/>
+    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/relatives#Michael">
+    <rdf:type rdf:resource="http://example.org/relatives#Person"/>
+    <rel:hasParent rdf:resource="http://example.org/relatives#John"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/relatives">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
 </rdf:RDF>

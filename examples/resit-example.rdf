@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rit="http://rcg.group.shef.ac.uk/resitowl/resit#"
+>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#sharc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#hpcs"/>
+    <rit:isa rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#hpc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#iceberg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#hpcs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+</rdf:RDF>
