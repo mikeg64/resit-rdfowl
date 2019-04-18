@@ -3,12 +3,12 @@
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:nodeID="N2dc75801067d45a59448ff519e8669c2">
-    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
-    <foaf:nick xml:lang="foo">donna</foaf:nick>
+  <rdf:Description rdf:nodeID="N9b496b2faf5b417f9396acebbfd4d5a3">
+    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#isa"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#ismemberof"/>
     <foaf:mbox rdf:resource="mailto:donna@example.org"/>
+    <foaf:nick xml:lang="foo">donna</foaf:nick>
     <foaf:name>Donna Fales</foaf:name>
-    <rdf:type>http://rcg.group.shef.ac.uk/resitowl/resit#service</rdf:type>
   </rdf:Description>
 </rdf:RDF>
