@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ns1="http://rcg.group.shef.ac.uk/resitowl/resit#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:nodeID="N9b496b2faf5b417f9396acebbfd4d5a3">
-    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#isa"/>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  <rdf:Description rdf:nodeID="N49f154ca80bc4d9b84eb46bf115c5294">
     <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#ismemberof"/>
-    <foaf:mbox rdf:resource="mailto:donna@example.org"/>
-    <foaf:nick xml:lang="foo">donna</foaf:nick>
     <foaf:name>Donna Fales</foaf:name>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#isa"/>
+    <foaf:mbox rdf:resource="mailto:donna@example.org"/>
+    <ns1:hpcs>iceberg</ns1:hpcs>
+    <foaf:nick xml:lang="foo">donna</foaf:nick>
   </rdf:Description>
 </rdf:RDF>
