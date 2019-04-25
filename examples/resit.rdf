@@ -3,83 +3,112 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hpcs">
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
-    <rdfs:label>hpcs</rdfs:label>
-    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#researchsoftware">
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
     <rdfs:label>researchsoftware</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hpc">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>hpc</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#system"/>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#group">
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#feature"/>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
-    <rdfs:label>group</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#ismemberof">
-    <rdfs:label>ismemberof</rdfs:label>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hasaccessto">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#schedgroup">
-    <rdfs:label>schedgroup</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#feature"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#personnel">
-    <rdfs:label>personnel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#iceberg">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
-    <rdfs:label>iceberg</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#feature">
-    <rdfs:label>feature</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>hasaccessto</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#service">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
     <rdfs:label>service</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#project">
-    <rdfs:label>project</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#feature"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#isa">
-    <rdfs:label>isa</rdfs:label>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hpc">
+    <rdfs:label>hpc</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#system"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#researchvminstance">
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdfs:label>researchvminstance</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#storage">
+    <rdfs:label>storage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hascompleted">
+    <rdfs:label>hascompleted</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#system">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>system</rdfs:label>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#assuredcomputing">
     <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
+    <rdfs:label>assuredcomputing</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#researchstorage">
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
+    <rdfs:label>researchstorage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hpcs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#researchsupport">
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>researchsupport</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#isprovidedby">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isprovidedby</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#isa">
+    <rdfs:label>isa</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#feature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdfs:label>feature</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#hasa">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasa</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#project">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdfs:label>project</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#feature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#researchvm">
+    <rdfs:label>researchvm</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit"/>
+    <rdfs:subClassOf rdf:resource="http://rcg.group.shef.ac.uk/resitowl/resit#service"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#ismemberof">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:label>ismemberof</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#status">
+    <rdfs:comment rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <rdfs:comment>Status e.g of a project can be Live, retired, Application, Completed, Not started etc....</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rcg.group.shef.ac.uk/resitowl/resit#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
 </rdf:RDF>

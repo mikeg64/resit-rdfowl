@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#> a <http://www.w3.org/2002/07/owl#Ontology> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#assuredcomputing> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "assuredcomputing" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
+        <http://rcg.group.shef.ac.uk/resitowl/resit#service> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#hasa> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "hasa" ;
+    rdfs:subPropertyOf <http://www.w3.org/2002/07/owl#topObjectProperty> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#hasaccessto> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "hasaccessto" ;
+    rdfs:subPropertyOf <http://www.w3.org/2002/07/owl#topObjectProperty> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#hascompleted> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "hascompleted" ;
+    rdfs:subPropertyOf <http://www.w3.org/2002/07/owl#topObjectProperty> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#hpc> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "hpc" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
+        <http://rcg.group.shef.ac.uk/resitowl/resit#system> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#hpcs> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
+        <http://rcg.group.shef.ac.uk/resitowl/resit#service> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#isa> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "isa" ;
+    rdfs:subPropertyOf <http://www.w3.org/2002/07/owl#topObjectProperty> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#ismemberof> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "ismemberof" ;
+    rdfs:subPropertyOf <http://www.w3.org/2002/07/owl#topObjectProperty> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#isprovidedby> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "isprovidedby" ;
+    rdfs:subPropertyOf <http://www.w3.org/2002/07/owl#topObjectProperty> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#project> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "project" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
+        <http://rcg.group.shef.ac.uk/resitowl/resit#feature> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#researchsoftware> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "researchsoftware" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
+        <http://rcg.group.shef.ac.uk/resitowl/resit#service> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#researchstorage> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "researchstorage" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
+        <http://rcg.group.shef.ac.uk/resitowl/resit#service> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#researchsupport> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "researchsupport" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
+        <http://rcg.group.shef.ac.uk/resitowl/resit#service> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#researchvm> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "researchvm" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
+        <http://rcg.group.shef.ac.uk/resitowl/resit#service> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#researchvminstance> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "researchvminstance" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#status> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:comment rdfs:subClassOf,
+        "Status e.g of a project can be Live, retired, Application, Completed, Not started etc...." .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#storage> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "storage" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#feature> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "feature" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit#service> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "service" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> .
+
+<http://rcg.group.shef.ac.uk/resitowl/resit> a <http://www.w3.org/2002/07/owl#Class> .
+
