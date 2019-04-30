@@ -48,6 +48,11 @@
     rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
         <http://rcg.group.shef.ac.uk/resitowl/resit#feature> .
 
+<http://rcg.group.shef.ac.uk/resitowl/resit#rdmp> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "rdmp" ;
+    rdfs:comment "rdmp is a research data management plan" ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit#feature> .
+
 <http://rcg.group.shef.ac.uk/resitowl/resit#researchsoftware> a <http://www.w3.org/2002/07/owl#Class> ;
     rdfs:label "researchsoftware" ;
     rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit>,
@@ -73,8 +78,9 @@
     rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> .
 
 <http://rcg.group.shef.ac.uk/resitowl/resit#status> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:comment rdfs:subClassOf,
-        "Status e.g of a project can be Live, retired, Application, Completed, Not started etc...." .
+    rdfs:label "status" ;
+    rdfs:comment "Status e.g of a project can be Live, retired, Application, Completed, Not started etc...." ;
+    rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit#feature> .
 
 <http://rcg.group.shef.ac.uk/resitowl/resit#storage> a <http://www.w3.org/2002/07/owl#Class> ;
     rdfs:label "storage" ;
@@ -87,6 +93,29 @@
 <http://rcg.group.shef.ac.uk/resitowl/resit#service> a <http://www.w3.org/2002/07/owl#Class> ;
     rdfs:label "service" ;
     rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> .
+
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#group
+<http://rcg.group.shef.ac.uk/resitowl/resit#group> a <http://www.w3.org/2002/07/owl#Class> ;
+                  rdfs:label "group" ;
+                  rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit#feature> .
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#schedgroup
+<http://rcg.group.shef.ac.uk/resitowl/resit#schedgroup> a <http://www.w3.org/2002/07/owl#Class> ;
+                  rdfs:label "schedgroup" ;
+                  rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit#feature> .
+
+
+###  http://rcg.group.shef.ac.uk/resitowl/resit#schedgroup
+:schedgroup rdf:type owl:Class ;
+                  rdfs:subClassOf <http://rcg.group.shef.ac.uk/resitowl/resit> ,
+                                  :feature ;
+                  rdfs:label "schedgroup" .
+
+
+
+
+
 
 <http://rcg.group.shef.ac.uk/resitowl/resit> a <http://www.w3.org/2002/07/owl#Class> .
 
